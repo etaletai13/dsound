@@ -1,6 +1,6 @@
 {
-  "name": "Steepshot",
-  "targetUrl": "https://alpha.steepshot.io/signin",
+  "name": "dsound",
+  "targetUrl": "https://dsound.audio",
   "platform": "linux",
   "arch": "x64",
   "out": "dist",
@@ -22,7 +22,7 @@
   "singleInstance": "true",
   "win32metadata": {
     "CompanyName": "Etaletai",
-    "FileDescription": "Electron app for Steepshot.io",
-    "ProductName": "Steepshot"
+    "FileDescription": "Electron app for dsound.io",
+    "ProductName": "dsound"
   }
 }

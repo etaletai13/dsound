@@ -1,9 +1,9 @@
 {
-  "name": "Steepshot",
+  "name": "dsound",
   "version": "1.0.0",
-  "description": "Steepshot desktop app",
+  "description": "dsound desktop app",
   "main": "main.js",
-  "repository": "https://github.com/etaletai13/steepshot",
+  "repository": "https://github.com/etaletai13/dsound",
   "author": "Casey Parker <parker.casey@icloud.com>",
   "license": "MIT",
   "private": true,
