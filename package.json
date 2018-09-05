@@ -8,13 +8,17 @@
   "license": "MIT",
   "private": true,
   "devDependencies": {
-    "asyncconsole": "~1.3.9",
+    "asyncconsole": "*",
+    "electron-builder": "~20.28.3",
     "nativefier": "*",
     "prettier-standard": "*"
   },
   "scripts": {
-    "prepare": "node main.js",
+    "build-lin": "yarn build --linux --pd dist/dsound-linux-x64 deb",
+    "build-mac": "yarn build --mac --pd dist/dsound-darwin-x64/dsound.app dmg",
+    "build-win": "yarn build --win --pd dist/dsound-windows-x64 nsis",
     "postinstall": "yarn prettier *.js *.json --write",
+    "prepare": "node main.js && yarn build-mac && yarn build-lin && yarn build-win",
     "test": "ls dist"
   }
 }
