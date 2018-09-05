@@ -18,7 +18,8 @@
     "build-mac": "yarn build --mac --pd dist/dsound-darwin-x64/dsound.app dmg",
     "build-win": "yarn build --win --pd dist/dsound-windows-x64 nsis",
     "postinstall": "yarn prettier *.js *.json --write",
-    "prepare": "node main.js && yarn build-mac && yarn build-lin && yarn build-win",
+    "prepare":
+      "node main.js && yarn build-mac && yarn build-lin && yarn build-win",
     "test": "ls dist"
   }
 }
